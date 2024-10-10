@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+
+  <body>
+        <a href = "https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=0f72c2adfb89460c6070e86d0784ec55&redirect_uri=http://localhost:5000/login/oauth2/code/kakao">
+            카카오 계정으로 로그인하세요
+        </a>
+
+        <th:block sec: authorize="isAuthenticated()">
+            <span sec: authentication="principal"></span>
+        </th:block>
+      </div>
+
+  </body>
+</html>
